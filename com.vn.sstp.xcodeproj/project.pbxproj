@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B84C0AE2AA5853700E6B3DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0AD2AA5853700E6B3DD /* AppDelegate.m */; };
+		7B84C0B12AA5853700E6B3DD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0B02AA5853700E6B3DD /* SceneDelegate.m */; };
+		7B84C0B42AA5853700E6B3DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0B32AA5853700E6B3DD /* ViewController.m */; };
+		7B84C0B72AA5853700E6B3DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B84C0B52AA5853700E6B3DD /* Main.storyboard */; };
+		7B84C0BA2AA5853700E6B3DD /* com_vn_sstp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0B82AA5853700E6B3DD /* com_vn_sstp.xcdatamodeld */; };
+		7B84C0BC2AA5853A00E6B3DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B84C0BB2AA5853A00E6B3DD /* Assets.xcassets */; };
+		7B84C0BF2AA5853A00E6B3DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B84C0BD2AA5853A00E6B3DD /* LaunchScreen.storyboard */; };
+		7B84C0C22AA5853A00E6B3DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0C12AA5853A00E6B3DD /* main.m */; };
+		7B84C0CB2AA5856300E6B3DD /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B84C0CA2AA5856300E6B3DD /* NetworkExtension.framework */; };
+		7B84C0D12AA585A700E6B3DD /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B84C0CA2AA5856300E6B3DD /* NetworkExtension.framework */; };
+		7B84C0D52AA585A700E6B3DD /* PacketTunnelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0D42AA585A700E6B3DD /* PacketTunnelProvider.m */; };
+		7B84C0DA2AA585A700E6B3DD /* tunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7B84C0D02AA585A700E6B3DD /* tunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7B84C1022AA5862B00E6B3DD /* sstp-fcs.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0E02AA5862A00E6B3DD /* sstp-fcs.c */; };
+		7B84C1032AA5862B00E6B3DD /* sstp-fcs.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0E02AA5862A00E6B3DD /* sstp-fcs.c */; };
+		7B84C1042AA5862B00E6B3DD /* sstp-option.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0E12AA5862A00E6B3DD /* sstp-option.c */; };
+		7B84C1052AA5862B00E6B3DD /* sstp-option.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0E12AA5862A00E6B3DD /* sstp-option.c */; };
+		7B84C1062AA5862B00E6B3DD /* sstp-stream.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0E22AA5862A00E6B3DD /* sstp-stream.c */; };
+		7B84C1072AA5862B00E6B3DD /* sstp-stream.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0E22AA5862A00E6B3DD /* sstp-stream.c */; };
+		7B84C1082AA5862B00E6B3DD /* sstp-event.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0E42AA5862A00E6B3DD /* sstp-event.c */; };
+		7B84C1092AA5862B00E6B3DD /* sstp-event.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0E42AA5862A00E6B3DD /* sstp-event.c */; };
+		7B84C10A2AA5862B00E6B3DD /* sstp-buff.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0E62AA5862A00E6B3DD /* sstp-buff.c */; };
+		7B84C10B2AA5862B00E6B3DD /* sstp-buff.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0E62AA5862A00E6B3DD /* sstp-buff.c */; };
+		7B84C10C2AA5862B00E6B3DD /* sstp-cmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0E72AA5862A00E6B3DD /* sstp-cmac.c */; };
+		7B84C10D2AA5862B00E6B3DD /* sstp-cmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0E72AA5862A00E6B3DD /* sstp-cmac.c */; };
+		7B84C10E2AA5862B00E6B3DD /* sstp-http.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0ED2AA5862A00E6B3DD /* sstp-http.c */; };
+		7B84C10F2AA5862B00E6B3DD /* sstp-http.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0ED2AA5862A00E6B3DD /* sstp-http.c */; };
+		7B84C1102AA5862B00E6B3DD /* sstp-packet.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0EE2AA5862A00E6B3DD /* sstp-packet.c */; };
+		7B84C1112AA5862B00E6B3DD /* sstp-packet.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0EE2AA5862A00E6B3DD /* sstp-packet.c */; };
+		7B84C1122AA5862B00E6B3DD /* sstp-chap.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0EF2AA5862B00E6B3DD /* sstp-chap.c */; };
+		7B84C1132AA5862B00E6B3DD /* sstp-chap.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0EF2AA5862B00E6B3DD /* sstp-chap.c */; };
+		7B84C1142AA5862B00E6B3DD /* sstp-task.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0F12AA5862B00E6B3DD /* sstp-task.c */; };
+		7B84C1152AA5862B00E6B3DD /* sstp-task.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0F12AA5862B00E6B3DD /* sstp-task.c */; };
+		7B84C1162AA5862B00E6B3DD /* sstp-route.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0F32AA5862B00E6B3DD /* sstp-route.c */; };
+		7B84C1172AA5862B00E6B3DD /* sstp-route.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0F32AA5862B00E6B3DD /* sstp-route.c */; };
+		7B84C1182AA5862B00E6B3DD /* sstp-dump.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0F62AA5862B00E6B3DD /* sstp-dump.c */; };
+		7B84C1192AA5862B00E6B3DD /* sstp-dump.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0F62AA5862B00E6B3DD /* sstp-dump.c */; };
+		7B84C11A2AA5862B00E6B3DD /* sstp-util.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0F72AA5862B00E6B3DD /* sstp-util.c */; };
+		7B84C11B2AA5862B00E6B3DD /* sstp-util.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0F72AA5862B00E6B3DD /* sstp-util.c */; };
+		7B84C11C2AA5862B00E6B3DD /* sstp-client.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0F82AA5862B00E6B3DD /* sstp-client.c */; };
+		7B84C11D2AA5862B00E6B3DD /* sstp-client.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0F82AA5862B00E6B3DD /* sstp-client.c */; };
+		7B84C11E2AA5862B00E6B3DD /* sstp-pppd.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0F92AA5862B00E6B3DD /* sstp-pppd.c */; };
+		7B84C11F2AA5862B00E6B3DD /* sstp-pppd.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0F92AA5862B00E6B3DD /* sstp-pppd.c */; };
+		7B84C1202AA5862B00E6B3DD /* sstp-state.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C1002AA5862B00E6B3DD /* sstp-state.c */; };
+		7B84C1212AA5862B00E6B3DD /* sstp-state.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C1002AA5862B00E6B3DD /* sstp-state.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B84C0D82AA585A700E6B3DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B84C0A12AA5853700E6B3DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B84C0CF2AA585A700E6B3DD;
+			remoteInfo = tunnel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7B84C0DE2AA585A700E6B3DD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7B84C0DA2AA585A700E6B3DD /* tunnel.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7B84C0A92AA5853700E6B3DD /* com.vn.sstp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = com.vn.sstp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B84C0AC2AA5853700E6B3DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7B84C0AD2AA5853700E6B3DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7B84C0AF2AA5853700E6B3DD /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		7B84C0B02AA5853700E6B3DD /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		7B84C0B22AA5853700E6B3DD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7B84C0B32AA5853700E6B3DD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7B84C0B62AA5853700E6B3DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B84C0B92AA5853700E6B3DD /* com_vn_sstp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = com_vn_sstp.xcdatamodel; sourceTree = "<group>"; };
+		7B84C0BB2AA5853A00E6B3DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B84C0BE2AA5853A00E6B3DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B84C0C02AA5853A00E6B3DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B84C0C12AA5853A00E6B3DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7B84C0C82AA5856200E6B3DD /* com.vn.sstp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = com.vn.sstp.entitlements; sourceTree = "<group>"; };
+		7B84C0CA2AA5856300E6B3DD /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		7B84C0D02AA585A700E6B3DD /* tunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = tunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B84C0D32AA585A700E6B3DD /* PacketTunnelProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PacketTunnelProvider.h; sourceTree = "<group>"; };
+		7B84C0D42AA585A700E6B3DD /* PacketTunnelProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PacketTunnelProvider.m; sourceTree = "<group>"; };
+		7B84C0D62AA585A700E6B3DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B84C0D72AA585A700E6B3DD /* tunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tunnel.entitlements; sourceTree = "<group>"; };
+		7B84C0E02AA5862A00E6B3DD /* sstp-fcs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-fcs.c"; sourceTree = "<group>"; };
+		7B84C0E12AA5862A00E6B3DD /* sstp-option.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-option.c"; sourceTree = "<group>"; };
+		7B84C0E22AA5862A00E6B3DD /* sstp-stream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-stream.c"; sourceTree = "<group>"; };
+		7B84C0E32AA5862A00E6B3DD /* sstp-event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-event.h"; sourceTree = "<group>"; };
+		7B84C0E42AA5862A00E6B3DD /* sstp-event.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-event.c"; sourceTree = "<group>"; };
+		7B84C0E52AA5862A00E6B3DD /* sstp-private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-private.h"; sourceTree = "<group>"; };
+		7B84C0E62AA5862A00E6B3DD /* sstp-buff.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-buff.c"; sourceTree = "<group>"; };
+		7B84C0E72AA5862A00E6B3DD /* sstp-cmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-cmac.c"; sourceTree = "<group>"; };
+		7B84C0E82AA5862A00E6B3DD /* sstp-packet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-packet.h"; sourceTree = "<group>"; };
+		7B84C0E92AA5862A00E6B3DD /* sstp-chap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-chap.h"; sourceTree = "<group>"; };
+		7B84C0EA2AA5862A00E6B3DD /* sstp-client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-client.h"; sourceTree = "<group>"; };
+		7B84C0EB2AA5862A00E6B3DD /* sstp-ppp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-ppp.h"; sourceTree = "<group>"; };
+		7B84C0EC2AA5862A00E6B3DD /* sstp-fcs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-fcs.h"; sourceTree = "<group>"; };
+		7B84C0ED2AA5862A00E6B3DD /* sstp-http.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-http.c"; sourceTree = "<group>"; };
+		7B84C0EE2AA5862A00E6B3DD /* sstp-packet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-packet.c"; sourceTree = "<group>"; };
+		7B84C0EF2AA5862B00E6B3DD /* sstp-chap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-chap.c"; sourceTree = "<group>"; };
+		7B84C0F02AA5862B00E6B3DD /* sstp-stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-stream.h"; sourceTree = "<group>"; };
+		7B84C0F12AA5862B00E6B3DD /* sstp-task.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-task.c"; sourceTree = "<group>"; };
+		7B84C0F22AA5862B00E6B3DD /* sstp-route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-route.h"; sourceTree = "<group>"; };
+		7B84C0F32AA5862B00E6B3DD /* sstp-route.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-route.c"; sourceTree = "<group>"; };
+		7B84C0F42AA5862B00E6B3DD /* sstp-pppd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-pppd.h"; sourceTree = "<group>"; };
+		7B84C0F52AA5862B00E6B3DD /* sstp-cmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-cmac.h"; sourceTree = "<group>"; };
+		7B84C0F62AA5862B00E6B3DD /* sstp-dump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-dump.c"; sourceTree = "<group>"; };
+		7B84C0F72AA5862B00E6B3DD /* sstp-util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-util.c"; sourceTree = "<group>"; };
+		7B84C0F82AA5862B00E6B3DD /* sstp-client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-client.c"; sourceTree = "<group>"; };
+		7B84C0F92AA5862B00E6B3DD /* sstp-pppd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-pppd.c"; sourceTree = "<group>"; };
+		7B84C0FA2AA5862B00E6B3DD /* sstp-dump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-dump.h"; sourceTree = "<group>"; };
+		7B84C0FB2AA5862B00E6B3DD /* sstp-buff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-buff.h"; sourceTree = "<group>"; };
+		7B84C0FC2AA5862B00E6B3DD /* sstp-http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-http.h"; sourceTree = "<group>"; };
+		7B84C0FD2AA5862B00E6B3DD /* sstp-option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-option.h"; sourceTree = "<group>"; };
+		7B84C0FE2AA5862B00E6B3DD /* sstp-task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-task.h"; sourceTree = "<group>"; };
+		7B84C0FF2AA5862B00E6B3DD /* sstp-util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-util.h"; sourceTree = "<group>"; };
+		7B84C1002AA5862B00E6B3DD /* sstp-state.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-state.c"; sourceTree = "<group>"; };
+		7B84C1012AA5862B00E6B3DD /* sstp-state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-state.h"; sourceTree = "<group>"; };
+		7B84C1222AA5867B00E6B3DD /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		7B84C1232AA5871800E6B3DD /* sstp-api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-api.h"; sourceTree = "<group>"; };
+		7B84C1242AA5871800E6B3DD /* sstp-compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-compat.h"; sourceTree = "<group>"; };
+		7B84C1252AA5871800E6B3DD /* sstp-log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-log.h"; sourceTree = "<group>"; };
+		7B84C1262AA5871900E6B3DD /* sstp-common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-common.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B84C0A62AA5853700E6B3DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B84C0CB2AA5856300E6B3DD /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B84C0CD2AA585A700E6B3DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B84C0D12AA585A700E6B3DD /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B84C0A02AA5853700E6B3DD = {
+			isa = PBXGroup;
+			children = (
+				7B84C0DF2AA5861100E6B3DD /* sstp */,
+				7B84C0AB2AA5853700E6B3DD /* com.vn.sstp */,
+				7B84C0D22AA585A700E6B3DD /* tunnel */,
+				7B84C0AA2AA5853700E6B3DD /* Products */,
+				7B84C0C92AA5856300E6B3DD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7B84C0AA2AA5853700E6B3DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B84C0A92AA5853700E6B3DD /* com.vn.sstp.app */,
+				7B84C0D02AA585A700E6B3DD /* tunnel.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B84C0AB2AA5853700E6B3DD /* com.vn.sstp */ = {
+			isa = PBXGroup;
+			children = (
+				7B84C0C82AA5856200E6B3DD /* com.vn.sstp.entitlements */,
+				7B84C0AC2AA5853700E6B3DD /* AppDelegate.h */,
+				7B84C0AD2AA5853700E6B3DD /* AppDelegate.m */,
+				7B84C0AF2AA5853700E6B3DD /* SceneDelegate.h */,
+				7B84C0B02AA5853700E6B3DD /* SceneDelegate.m */,
+				7B84C0B22AA5853700E6B3DD /* ViewController.h */,
+				7B84C0B32AA5853700E6B3DD /* ViewController.m */,
+				7B84C0B52AA5853700E6B3DD /* Main.storyboard */,
+				7B84C0BB2AA5853A00E6B3DD /* Assets.xcassets */,
+				7B84C0BD2AA5853A00E6B3DD /* LaunchScreen.storyboard */,
+				7B84C0C02AA5853A00E6B3DD /* Info.plist */,
+				7B84C0C12AA5853A00E6B3DD /* main.m */,
+				7B84C0B82AA5853700E6B3DD /* com_vn_sstp.xcdatamodeld */,
+			);
+			path = com.vn.sstp;
+			sourceTree = "<group>";
+		};
+		7B84C0C92AA5856300E6B3DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B84C0CA2AA5856300E6B3DD /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B84C0D22AA585A700E6B3DD /* tunnel */ = {
+			isa = PBXGroup;
+			children = (
+				7B84C0D32AA585A700E6B3DD /* PacketTunnelProvider.h */,
+				7B84C0D42AA585A700E6B3DD /* PacketTunnelProvider.m */,
+				7B84C0D62AA585A700E6B3DD /* Info.plist */,
+				7B84C0D72AA585A700E6B3DD /* tunnel.entitlements */,
+			);
+			path = tunnel;
+			sourceTree = "<group>";
+		};
+		7B84C0DF2AA5861100E6B3DD /* sstp */ = {
+			isa = PBXGroup;
+			children = (
+				7B84C1232AA5871800E6B3DD /* sstp-api.h */,
+				7B84C1262AA5871900E6B3DD /* sstp-common.h */,
+				7B84C1242AA5871800E6B3DD /* sstp-compat.h */,
+				7B84C1252AA5871800E6B3DD /* sstp-log.h */,
+				7B84C1222AA5867B00E6B3DD /* config.h */,
+				7B84C0E62AA5862A00E6B3DD /* sstp-buff.c */,
+				7B84C0FB2AA5862B00E6B3DD /* sstp-buff.h */,
+				7B84C0EF2AA5862B00E6B3DD /* sstp-chap.c */,
+				7B84C0E92AA5862A00E6B3DD /* sstp-chap.h */,
+				7B84C0F82AA5862B00E6B3DD /* sstp-client.c */,
+				7B84C0EA2AA5862A00E6B3DD /* sstp-client.h */,
+				7B84C0E72AA5862A00E6B3DD /* sstp-cmac.c */,
+				7B84C0F52AA5862B00E6B3DD /* sstp-cmac.h */,
+				7B84C0F62AA5862B00E6B3DD /* sstp-dump.c */,
+				7B84C0FA2AA5862B00E6B3DD /* sstp-dump.h */,
+				7B84C0E42AA5862A00E6B3DD /* sstp-event.c */,
+				7B84C0E32AA5862A00E6B3DD /* sstp-event.h */,
+				7B84C0E02AA5862A00E6B3DD /* sstp-fcs.c */,
+				7B84C0EC2AA5862A00E6B3DD /* sstp-fcs.h */,
+				7B84C0ED2AA5862A00E6B3DD /* sstp-http.c */,
+				7B84C0FC2AA5862B00E6B3DD /* sstp-http.h */,
+				7B84C0E12AA5862A00E6B3DD /* sstp-option.c */,
+				7B84C0FD2AA5862B00E6B3DD /* sstp-option.h */,
+				7B84C0EE2AA5862A00E6B3DD /* sstp-packet.c */,
+				7B84C0E82AA5862A00E6B3DD /* sstp-packet.h */,
+				7B84C0EB2AA5862A00E6B3DD /* sstp-ppp.h */,
+				7B84C0F92AA5862B00E6B3DD /* sstp-pppd.c */,
+				7B84C0F42AA5862B00E6B3DD /* sstp-pppd.h */,
+				7B84C0E52AA5862A00E6B3DD /* sstp-private.h */,
+				7B84C0F32AA5862B00E6B3DD /* sstp-route.c */,
+				7B84C0F22AA5862B00E6B3DD /* sstp-route.h */,
+				7B84C1002AA5862B00E6B3DD /* sstp-state.c */,
+				7B84C1012AA5862B00E6B3DD /* sstp-state.h */,
+				7B84C0E22AA5862A00E6B3DD /* sstp-stream.c */,
+				7B84C0F02AA5862B00E6B3DD /* sstp-stream.h */,
+				7B84C0F12AA5862B00E6B3DD /* sstp-task.c */,
+				7B84C0FE2AA5862B00E6B3DD /* sstp-task.h */,
+				7B84C0F72AA5862B00E6B3DD /* sstp-util.c */,
+				7B84C0FF2AA5862B00E6B3DD /* sstp-util.h */,
+			);
+			path = sstp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B84C0A82AA5853700E6B3DD /* com.vn.sstp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B84C0C52AA5853A00E6B3DD /* Build configuration list for PBXNativeTarget "com.vn.sstp" */;
+			buildPhases = (
+				7B84C0A52AA5853700E6B3DD /* Sources */,
+				7B84C0A62AA5853700E6B3DD /* Frameworks */,
+				7B84C0A72AA5853700E6B3DD /* Resources */,
+				7B84C0DE2AA585A700E6B3DD /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B84C0D92AA585A700E6B3DD /* PBXTargetDependency */,
+			);
+			name = com.vn.sstp;
+			productName = com.vn.sstp;
+			productReference = 7B84C0A92AA5853700E6B3DD /* com.vn.sstp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B84C0CF2AA585A700E6B3DD /* tunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B84C0DB2AA585A700E6B3DD /* Build configuration list for PBXNativeTarget "tunnel" */;
+			buildPhases = (
+				7B84C0CC2AA585A700E6B3DD /* Sources */,
+				7B84C0CD2AA585A700E6B3DD /* Frameworks */,
+				7B84C0CE2AA585A700E6B3DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tunnel;
+			productName = tunnel;
+			productReference = 7B84C0D02AA585A700E6B3DD /* tunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B84C0A12AA5853700E6B3DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					7B84C0A82AA5853700E6B3DD = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					7B84C0CF2AA585A700E6B3DD = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 7B84C0A42AA5853700E6B3DD /* Build configuration list for PBXProject "com.vn.sstp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B84C0A02AA5853700E6B3DD;
+			productRefGroup = 7B84C0AA2AA5853700E6B3DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B84C0A82AA5853700E6B3DD /* com.vn.sstp */,
+				7B84C0CF2AA585A700E6B3DD /* tunnel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B84C0A72AA5853700E6B3DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B84C0BF2AA5853A00E6B3DD /* LaunchScreen.storyboard in Resources */,
+				7B84C0BC2AA5853A00E6B3DD /* Assets.xcassets in Resources */,
+				7B84C0B72AA5853700E6B3DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B84C0CE2AA585A700E6B3DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B84C0A52AA5853700E6B3DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B84C0C22AA5853A00E6B3DD /* main.m in Sources */,
+				7B84C1062AA5862B00E6B3DD /* sstp-stream.c in Sources */,
+				7B84C1082AA5862B00E6B3DD /* sstp-event.c in Sources */,
+				7B84C1162AA5862B00E6B3DD /* sstp-route.c in Sources */,
+				7B84C0B42AA5853700E6B3DD /* ViewController.m in Sources */,
+				7B84C1142AA5862B00E6B3DD /* sstp-task.c in Sources */,
+				7B84C1102AA5862B00E6B3DD /* sstp-packet.c in Sources */,
+				7B84C1122AA5862B00E6B3DD /* sstp-chap.c in Sources */,
+				7B84C10A2AA5862B00E6B3DD /* sstp-buff.c in Sources */,
+				7B84C1022AA5862B00E6B3DD /* sstp-fcs.c in Sources */,
+				7B84C11C2AA5862B00E6B3DD /* sstp-client.c in Sources */,
+				7B84C1182AA5862B00E6B3DD /* sstp-dump.c in Sources */,
+				7B84C0AE2AA5853700E6B3DD /* AppDelegate.m in Sources */,
+				7B84C10E2AA5862B00E6B3DD /* sstp-http.c in Sources */,
+				7B84C1202AA5862B00E6B3DD /* sstp-state.c in Sources */,
+				7B84C11A2AA5862B00E6B3DD /* sstp-util.c in Sources */,
+				7B84C1042AA5862B00E6B3DD /* sstp-option.c in Sources */,
+				7B84C0B12AA5853700E6B3DD /* SceneDelegate.m in Sources */,
+				7B84C0BA2AA5853700E6B3DD /* com_vn_sstp.xcdatamodeld in Sources */,
+				7B84C10C2AA5862B00E6B3DD /* sstp-cmac.c in Sources */,
+				7B84C11E2AA5862B00E6B3DD /* sstp-pppd.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B84C0CC2AA585A700E6B3DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B84C1032AA5862B00E6B3DD /* sstp-fcs.c in Sources */,
+				7B84C1192AA5862B00E6B3DD /* sstp-dump.c in Sources */,
+				7B84C1072AA5862B00E6B3DD /* sstp-stream.c in Sources */,
+				7B84C1112AA5862B00E6B3DD /* sstp-packet.c in Sources */,
+				7B84C1092AA5862B00E6B3DD /* sstp-event.c in Sources */,
+				7B84C11D2AA5862B00E6B3DD /* sstp-client.c in Sources */,
+				7B84C10F2AA5862B00E6B3DD /* sstp-http.c in Sources */,
+				7B84C11F2AA5862B00E6B3DD /* sstp-pppd.c in Sources */,
+				7B84C1132AA5862B00E6B3DD /* sstp-chap.c in Sources */,
+				7B84C0D52AA585A700E6B3DD /* PacketTunnelProvider.m in Sources */,
+				7B84C10B2AA5862B00E6B3DD /* sstp-buff.c in Sources */,
+				7B84C1212AA5862B00E6B3DD /* sstp-state.c in Sources */,
+				7B84C11B2AA5862B00E6B3DD /* sstp-util.c in Sources */,
+				7B84C10D2AA5862B00E6B3DD /* sstp-cmac.c in Sources */,
+				7B84C1152AA5862B00E6B3DD /* sstp-task.c in Sources */,
+				7B84C1052AA5862B00E6B3DD /* sstp-option.c in Sources */,
+				7B84C1172AA5862B00E6B3DD /* sstp-route.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B84C0D92AA585A700E6B3DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B84C0CF2AA585A700E6B3DD /* tunnel */;
+			targetProxy = 7B84C0D82AA585A700E6B3DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B84C0B52AA5853700E6B3DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B84C0B62AA5853700E6B3DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7B84C0BD2AA5853A00E6B3DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B84C0BE2AA5853A00E6B3DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B84C0C32AA5853A00E6B3DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7B84C0C42AA5853A00E6B3DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B84C0C62AA5853A00E6B3DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = com.vn.sstp/com.vn.sstp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8328J8PQDC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = com.vn.sstp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cen.com-vn-sstp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B84C0C72AA5853A00E6B3DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = com.vn.sstp/com.vn.sstp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8328J8PQDC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = com.vn.sstp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cen.com-vn-sstp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7B84C0DC2AA585A700E6B3DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = tunnel/tunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8328J8PQDC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = tunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cen.com-vn-sstp.tunnel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B84C0DD2AA585A700E6B3DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = tunnel/tunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8328J8PQDC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = tunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cen.com-vn-sstp.tunnel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B84C0A42AA5853700E6B3DD /* Build configuration list for PBXProject "com.vn.sstp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B84C0C32AA5853A00E6B3DD /* Debug */,
+				7B84C0C42AA5853A00E6B3DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B84C0C52AA5853A00E6B3DD /* Build configuration list for PBXNativeTarget "com.vn.sstp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B84C0C62AA5853A00E6B3DD /* Debug */,
+				7B84C0C72AA5853A00E6B3DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B84C0DB2AA585A700E6B3DD /* Build configuration list for PBXNativeTarget "tunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B84C0DC2AA585A700E6B3DD /* Debug */,
+				7B84C0DD2AA585A700E6B3DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7B84C0B82AA5853700E6B3DD /* com_vn_sstp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7B84C0B92AA5853700E6B3DD /* com_vn_sstp.xcdatamodel */,
+			);
+			currentVersion = 7B84C0B92AA5853700E6B3DD /* com_vn_sstp.xcdatamodel */;
+			path = com_vn_sstp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7B84C0A12AA5853700E6B3DD /* Project object */;
+}
