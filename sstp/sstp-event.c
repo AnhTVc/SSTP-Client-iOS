@@ -22,7 +22,7 @@
  *  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <config.h>
+#include "config.h"
 #include <errno.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -34,7 +34,7 @@
 #include <sys/un.h>
 #include <unistd.h>
 #include <netdb.h>
-#include <sstp-api.h>
+#include "sstp-api.h"
 
 #include "sstp-private.h"
 #include "sstp-client.h"
