@@ -66,12 +66,12 @@ void sstp_usage_die(const char *prog, int code,
     char format[SSTP_DFLT_BUFSZ+1];
     int ret = (-1);
 
-    printf("%s v%s\n", PACKAGE_NAME, PACKAGE_VERSION);
+//    printf("%s v%s\n", PACKAGE_NAME, PACKAGE_VERSION);
     printf("Copyright (C) Eivind Næss 2011-2022, All Rights Reserved\n\n");
     printf("License GPLv2+: GNU GPL version 2 or later <http://gnu.org/licenses/gpl.html>\n");
     printf("This is free software: you are free to change and redistribute it.\n");
     printf("There is NO WARRANTY, to the extent permitted by law.\n\n");
-    printf("Report Bugs:\n  %s\n\n", PACKAGE_BUGREPORT);
+//    printf("Report Bugs:\n  %s\n\n", PACKAGE_BUGREPORT);
 
 
     /* Print the usage text */
@@ -124,7 +124,7 @@ void sstp_usage_die(const char *prog, int code,
  */
 static void sstp_print_version(const char *prog)
 {
-    printf("%s version %s\n", PACKAGE_NAME, PACKAGE_VERSION);
+//    printf("%s version %s\n", PACKAGE_NAME, PACKAGE_VERSION);
     exit(0);
 }
 
@@ -357,25 +357,26 @@ int sstp_parse_argv(sstp_option_st *ctx, int argc, char **argv)
     /* If not specified, use the default value */
     if (!ctx->priv_user)
     {
-        ctx->priv_user = strdup(SSTP_USER);
+        // TODO test
+//        ctx->priv_user = strdup(SSTP_USER);
     }
 
     /* If not specified, use the default value */
     if (!ctx->priv_group)
     {
-        ctx->priv_group = strdup(SSTP_GROUP);
+//        ctx->priv_group = strdup(SSTP_GROUP);
     }
 
     /* If not specified, use the default value */
     if (!ctx->priv_dir)
     {
-        ctx->priv_dir = strdup(SSTP_RUNTIME_DIR);
+//        ctx->priv_dir = strdup(SSTP_RUNTIME_DIR);
     }
 
     /* If not specified, use the system CA path */
     if (!ctx->ca_path) 
     {
-        ctx->ca_path = strdup(SYSTEM_CA_PATH);
+//        ctx->ca_path = strdup(SYSTEM_CA_PATH);
     }
 
     /* At least one argument is required */

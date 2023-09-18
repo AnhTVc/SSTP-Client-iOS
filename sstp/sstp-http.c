@@ -21,7 +21,7 @@
  *  with this program; if not, write to the Free Software Foundation, Inc.,
  *  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
-#include <config.h>
+#include "config.h"
 #include <string.h>
 #include "sstp-private.h"
 
@@ -463,7 +463,7 @@ status_t sstp_http_proxy(sstp_http_st *http, sstp_stream_st *stream)
 
     /* Format the buffer */
     ret = sstp_buff_print(http->buf, SSTP_HTTP_PROXY_CONNECT_FMT,
-            http->server, PACKAGE);
+            http->server);
     if (SSTP_OKAY != ret)
     {
         goto done;
