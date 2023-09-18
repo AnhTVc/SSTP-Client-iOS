@@ -285,7 +285,7 @@ status_t sstp_event_create(sstp_event_st **ctx, sstp_option_st *opts,
     /* Initialize the address */
     memset(&addr, 0, sizeof(addr));
     addr.sun_family = AF_UNIX;
-    snprintf(addr.sun_path, sizeof(addr.sun_path), "%s/sstpc-%s", SSTP_RUNTIME_DIR, 
+    snprintf(addr.sun_path, sizeof(addr.sun_path), "%s/sstpc-%s",  
         (opts->ipparam) ? opts->ipparam : SSTP_SOCK_NAME);
 
     /* Make sure we remove any existing file first */

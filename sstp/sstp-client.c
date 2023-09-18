@@ -22,7 +22,7 @@
  *  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <config.h>
+#include "config.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <errno.h>
@@ -545,14 +545,17 @@ static status_t sstp_init_ssl(sstp_client_st *client, sstp_option_st *opt)
 {
     int retval = SSTP_FAIL;
     int status = 0;
-
+#if OPENSSL_VERSION_NUMBER < 0x10100000L || defined(LIBRESSL_VERSION_NUMBER)
+    SSL_library_init();
+    SSL_load_error_strings();
+#endif
     /* Initialize the OpenSSL library */
-    status = SSL_library_init();
-    if (status != 1)
-    {
-        log_err("Could not initialize SSL");
-        goto done;
-    }
+//    status = SSL_library_init();
+//    if (status != 1)
+//    {
+//        log_err("Could not initialize SSL");
+//        goto done;
+//    }
 
 #if OPENSSL_VERSION_NUMBER >= 0x30000000L
     client->legacy = OSSL_PROVIDER_load(NULL, "legacy");
@@ -571,7 +574,7 @@ static status_t sstp_init_ssl(sstp_client_st *client, sstp_option_st *opt)
 #endif
 
     /* Load all error strings */
-    SSL_load_error_strings();
+    
 
     /* Create a new crypto context */
     client->ssl_ctx = SSL_CTX_new(SSLv23_client_method());
@@ -861,7 +864,7 @@ done:
 /*!
  * @brief The main application entry-point
  */
-int main(int argc, char *argv[])
+int mainAnhTV(int argc, char *argv[])
 {
     sstp_option_st option;
     int ret = 0;
@@ -891,15 +894,16 @@ int main(int argc, char *argv[])
     }
 
     /* Check if we can access the runtime directory */
-    if (access(SSTP_RUNTIME_DIR, F_OK))
-    {
-        ret = sstp_create_dir(SSTP_RUNTIME_DIR, option.priv_user, 
-                option.priv_group, 0755);
-        if (ret != 0)
-        {
-            log_warn("Could not access or create runtime directory");
-        }
-    }
+    // TODO AnhTV
+//    if (access(SSTP_RUNTIME_DIR, F_OK))
+//    {
+//        ret = sstp_create_dir(SSTP_RUNTIME_DIR, option.priv_user,
+//                option.priv_group, 0755);
+//        if (ret != 0)
+//        {
+//            log_warn("Could not access or create runtime directory");
+//        }
+//    }
 
     /* Create the privilege separation directory */
     if (option.priv_dir && access(option.priv_dir, F_OK))

@@ -463,7 +463,7 @@ status_t sstp_http_proxy(sstp_http_st *http, sstp_stream_st *stream)
 
     /* Format the buffer */
     ret = sstp_buff_print(http->buf, SSTP_HTTP_PROXY_CONNECT_FMT,
-            http->server, PACKAGE);
+            http->server);
     if (SSTP_OKAY != ret)
     {
         goto done;

@@ -357,25 +357,26 @@ int sstp_parse_argv(sstp_option_st *ctx, int argc, char **argv)
     /* If not specified, use the default value */
     if (!ctx->priv_user)
     {
-        ctx->priv_user = strdup(SSTP_USER);
+        // TODO test
+//        ctx->priv_user = strdup(SSTP_USER);
     }
 
     /* If not specified, use the default value */
     if (!ctx->priv_group)
     {
-        ctx->priv_group = strdup(SSTP_GROUP);
+//        ctx->priv_group = strdup(SSTP_GROUP);
     }
 
     /* If not specified, use the default value */
     if (!ctx->priv_dir)
     {
-        ctx->priv_dir = strdup(SSTP_RUNTIME_DIR);
+//        ctx->priv_dir = strdup(SSTP_RUNTIME_DIR);
     }
 
     /* If not specified, use the system CA path */
     if (!ctx->ca_path) 
     {
-        ctx->ca_path = strdup(SYSTEM_CA_PATH);
+//        ctx->ca_path = strdup(SYSTEM_CA_PATH);
     }
 
     /* At least one argument is required */

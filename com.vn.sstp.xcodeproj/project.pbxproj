@@ -7,13 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B0C6F2E2AB759860039666C /* libevent_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0C6F2B2AB759780039666C /* libevent_core.a */; };
-		7B0C6F2F2AB759860039666C /* libevent_extra.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0C6F2C2AB759780039666C /* libevent_extra.a */; };
-		7B0C6F302AB759860039666C /* libevent_pthreads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0C6F2A2AB759780039666C /* libevent_pthreads.a */; };
 		7B0C6F312AB759860039666C /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0C6F2D2AB759780039666C /* libevent.a */; };
-		7B0C6F322AB759A00039666C /* libevent_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0C6F2B2AB759780039666C /* libevent_core.a */; };
-		7B0C6F332AB759A00039666C /* libevent_extra.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0C6F2C2AB759780039666C /* libevent_extra.a */; };
-		7B0C6F342AB759A00039666C /* libevent_pthreads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0C6F2A2AB759780039666C /* libevent_pthreads.a */; };
 		7B0C6F352AB759A00039666C /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0C6F2D2AB759780039666C /* libevent.a */; };
 		7B84C0AE2AA5853700E6B3DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0AD2AA5853700E6B3DD /* AppDelegate.m */; };
 		7B84C0B12AA5853700E6B3DD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B84C0B02AA5853700E6B3DD /* SceneDelegate.m */; };
@@ -63,6 +57,16 @@
 		7B84C12A2AA77D8300E6B3DD /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B84C1292AA77D7900E6B3DD /* libcrypto.a */; };
 		7B84C12B2AA77D9700E6B3DD /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B84C1292AA77D7900E6B3DD /* libcrypto.a */; };
 		7B84C12C2AA77D9F00E6B3DD /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B84C1272AA77D6600E6B3DD /* libssl.a */; };
+		7BFC200F2AB89FAB00CE1979 /* sstp-api.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC200E2AB89FAB00CE1979 /* sstp-api.c */; };
+		7BFC20102AB89FAB00CE1979 /* sstp-api.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC200E2AB89FAB00CE1979 /* sstp-api.c */; };
+		7BFC20162AB89FD400CE1979 /* sstp-log.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC20122AB89FD300CE1979 /* sstp-log.c */; };
+		7BFC20172AB89FD400CE1979 /* sstp-log.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC20122AB89FD300CE1979 /* sstp-log.c */; };
+		7BFC20182AB89FD400CE1979 /* sstp-log-syslog.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC20132AB89FD300CE1979 /* sstp-log-syslog.c */; };
+		7BFC20192AB89FD400CE1979 /* sstp-log-syslog.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC20132AB89FD300CE1979 /* sstp-log-syslog.c */; };
+		7BFC201A2AB89FD400CE1979 /* sstp-log-std.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC20142AB89FD400CE1979 /* sstp-log-std.c */; };
+		7BFC201B2AB89FD400CE1979 /* sstp-log-std.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC20142AB89FD400CE1979 /* sstp-log-std.c */; };
+		7BFC201C2AB89FD400CE1979 /* sstp-log-file.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC20152AB89FD400CE1979 /* sstp-log-file.c */; };
+		7BFC201D2AB89FD400CE1979 /* sstp-log-file.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC20152AB89FD400CE1979 /* sstp-log-file.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +159,12 @@
 		7B84C1262AA5871900E6B3DD /* sstp-common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-common.h"; sourceTree = "<group>"; };
 		7B84C1272AA77D6600E6B3DD /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = lib/libssl.a; sourceTree = "<group>"; };
 		7B84C1292AA77D7900E6B3DD /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = lib/libcrypto.a; sourceTree = "<group>"; };
+		7BFC200E2AB89FAB00CE1979 /* sstp-api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-api.c"; sourceTree = "<group>"; };
+		7BFC20112AB89FD300CE1979 /* sstp-log-private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-log-private.h"; sourceTree = "<group>"; };
+		7BFC20122AB89FD300CE1979 /* sstp-log.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-log.c"; sourceTree = "<group>"; };
+		7BFC20132AB89FD300CE1979 /* sstp-log-syslog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-log-syslog.c"; sourceTree = "<group>"; };
+		7BFC20142AB89FD400CE1979 /* sstp-log-std.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-log-std.c"; sourceTree = "<group>"; };
+		7BFC20152AB89FD400CE1979 /* sstp-log-file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-log-file.c"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,12 +173,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B84C1282AA77D7000E6B3DD /* libssl.a in Frameworks */,
-				7B0C6F302AB759860039666C /* libevent_pthreads.a in Frameworks */,
 				7B0C6F312AB759860039666C /* libevent.a in Frameworks */,
 				7B84C0CB2AA5856300E6B3DD /* NetworkExtension.framework in Frameworks */,
 				7B84C12A2AA77D8300E6B3DD /* libcrypto.a in Frameworks */,
-				7B0C6F2E2AB759860039666C /* libevent_core.a in Frameworks */,
-				7B0C6F2F2AB759860039666C /* libevent_extra.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,12 +184,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B84C12B2AA77D9700E6B3DD /* libcrypto.a in Frameworks */,
-				7B0C6F342AB759A00039666C /* libevent_pthreads.a in Frameworks */,
 				7B0C6F352AB759A00039666C /* libevent.a in Frameworks */,
 				7B84C0D12AA585A700E6B3DD /* NetworkExtension.framework in Frameworks */,
 				7B84C12C2AA77D9F00E6B3DD /* libssl.a in Frameworks */,
-				7B0C6F322AB759A00039666C /* libevent_core.a in Frameworks */,
-				7B0C6F332AB759A00039666C /* libevent_extra.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +261,12 @@
 		7B84C0DF2AA5861100E6B3DD /* sstp */ = {
 			isa = PBXGroup;
 			children = (
+				7BFC20152AB89FD400CE1979 /* sstp-log-file.c */,
+				7BFC20112AB89FD300CE1979 /* sstp-log-private.h */,
+				7BFC20142AB89FD400CE1979 /* sstp-log-std.c */,
+				7BFC20132AB89FD300CE1979 /* sstp-log-syslog.c */,
+				7BFC20122AB89FD300CE1979 /* sstp-log.c */,
+				7BFC200E2AB89FAB00CE1979 /* sstp-api.c */,
 				7B84C1232AA5871800E6B3DD /* sstp-api.h */,
 				7B84C1262AA5871900E6B3DD /* sstp-common.h */,
 				7B84C1242AA5871800E6B3DD /* sstp-compat.h */,
@@ -401,8 +411,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B84C0C22AA5853A00E6B3DD /* main.m in Sources */,
+				7BFC20182AB89FD400CE1979 /* sstp-log-syslog.c in Sources */,
 				7B84C1062AA5862B00E6B3DD /* sstp-stream.c in Sources */,
 				7B84C1082AA5862B00E6B3DD /* sstp-event.c in Sources */,
+				7BFC201C2AB89FD400CE1979 /* sstp-log-file.c in Sources */,
 				7B84C1162AA5862B00E6B3DD /* sstp-route.c in Sources */,
 				7B84C0B42AA5853700E6B3DD /* ViewController.m in Sources */,
 				7B84C1142AA5862B00E6B3DD /* sstp-task.c in Sources */,
@@ -413,13 +425,16 @@
 				7B84C11C2AA5862B00E6B3DD /* sstp-client.c in Sources */,
 				7B84C1182AA5862B00E6B3DD /* sstp-dump.c in Sources */,
 				7B84C0AE2AA5853700E6B3DD /* AppDelegate.m in Sources */,
+				7BFC20162AB89FD400CE1979 /* sstp-log.c in Sources */,
 				7B84C10E2AA5862B00E6B3DD /* sstp-http.c in Sources */,
 				7B84C1202AA5862B00E6B3DD /* sstp-state.c in Sources */,
 				7B84C11A2AA5862B00E6B3DD /* sstp-util.c in Sources */,
+				7BFC200F2AB89FAB00CE1979 /* sstp-api.c in Sources */,
 				7B84C1042AA5862B00E6B3DD /* sstp-option.c in Sources */,
 				7B84C0B12AA5853700E6B3DD /* SceneDelegate.m in Sources */,
 				7B84C0BA2AA5853700E6B3DD /* com_vn_sstp.xcdatamodeld in Sources */,
 				7B84C10C2AA5862B00E6B3DD /* sstp-cmac.c in Sources */,
+				7BFC201A2AB89FD400CE1979 /* sstp-log-std.c in Sources */,
 				7B84C11E2AA5862B00E6B3DD /* sstp-pppd.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,17 +444,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B84C1032AA5862B00E6B3DD /* sstp-fcs.c in Sources */,
+				7BFC20192AB89FD400CE1979 /* sstp-log-syslog.c in Sources */,
 				7B84C1192AA5862B00E6B3DD /* sstp-dump.c in Sources */,
 				7B84C1072AA5862B00E6B3DD /* sstp-stream.c in Sources */,
+				7BFC20172AB89FD400CE1979 /* sstp-log.c in Sources */,
 				7B84C1112AA5862B00E6B3DD /* sstp-packet.c in Sources */,
 				7B84C1092AA5862B00E6B3DD /* sstp-event.c in Sources */,
 				7B84C11D2AA5862B00E6B3DD /* sstp-client.c in Sources */,
+				7BFC201B2AB89FD400CE1979 /* sstp-log-std.c in Sources */,
 				7B84C10F2AA5862B00E6B3DD /* sstp-http.c in Sources */,
 				7B84C11F2AA5862B00E6B3DD /* sstp-pppd.c in Sources */,
 				7B84C1132AA5862B00E6B3DD /* sstp-chap.c in Sources */,
+				7BFC201D2AB89FD400CE1979 /* sstp-log-file.c in Sources */,
 				7B84C0D52AA585A700E6B3DD /* PacketTunnelProvider.m in Sources */,
 				7B84C10B2AA5862B00E6B3DD /* sstp-buff.c in Sources */,
 				7B84C1212AA5862B00E6B3DD /* sstp-state.c in Sources */,
+				7BFC20102AB89FAB00CE1979 /* sstp-api.c in Sources */,
 				7B84C11B2AA5862B00E6B3DD /* sstp-util.c in Sources */,
 				7B84C10D2AA5862B00E6B3DD /* sstp-cmac.c in Sources */,
 				7B84C1152AA5862B00E6B3DD /* sstp-task.c in Sources */,
@@ -599,6 +619,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8328J8PQDC;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/include",
@@ -639,6 +660,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8328J8PQDC;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/include",
@@ -677,6 +699,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8328J8PQDC;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/include",
@@ -714,6 +737,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8328J8PQDC;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/include",
