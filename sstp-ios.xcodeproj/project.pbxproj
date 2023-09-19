@@ -57,6 +57,18 @@
 		7B84C12A2AA77D8300E6B3DD /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B84C1292AA77D7900E6B3DD /* libcrypto.a */; };
 		7B84C12B2AA77D9700E6B3DD /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B84C1292AA77D7900E6B3DD /* libcrypto.a */; };
 		7B84C12C2AA77D9F00E6B3DD /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B84C1272AA77D6600E6B3DD /* libssl.a */; };
+		7B9F18FA2AB9FB0400A744E5 /* OpenPacket.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F18F82AB9FB0400A744E5 /* OpenPacket.mm */; };
+		7B9F18FB2AB9FB0400A744E5 /* OpenPacket.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F18F82AB9FB0400A744E5 /* OpenPacket.mm */; };
+		7B9F18FF2AB9FB3B00A744E5 /* OpenNetworkSettingsBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F18FE2AB9FB3A00A744E5 /* OpenNetworkSettingsBuilder.m */; };
+		7B9F19002AB9FB3B00A744E5 /* OpenNetworkSettingsBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F18FE2AB9FB3A00A744E5 /* OpenNetworkSettingsBuilder.m */; };
+		7B9F19032AB9FB4C00A744E5 /* OpenPacketFlowBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F19012AB9FB4C00A744E5 /* OpenPacketFlowBridge.mm */; };
+		7B9F19042AB9FB4C00A744E5 /* OpenPacketFlowBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F19012AB9FB4C00A744E5 /* OpenPacketFlowBridge.mm */; };
+		7B9F19072AB9FB6300A744E5 /* OpenAdapter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F19052AB9FB6300A744E5 /* OpenAdapter.mm */; };
+		7B9F19082AB9FB6300A744E5 /* OpenAdapter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F19052AB9FB6300A744E5 /* OpenAdapter.mm */; };
+		7B9F190B2AB9FB7300A744E5 /* OpenClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F19092AB9FB7300A744E5 /* OpenClient.mm */; };
+		7B9F190C2AB9FB7300A744E5 /* OpenClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F19092AB9FB7300A744E5 /* OpenClient.mm */; };
+		7B9F190F2AB9FBB000A744E5 /* OpenVPNError.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F190E2AB9FBB000A744E5 /* OpenVPNError.m */; };
+		7B9F19102AB9FBB000A744E5 /* OpenVPNError.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F190E2AB9FBB000A744E5 /* OpenVPNError.m */; };
 		7BFC200F2AB89FAB00CE1979 /* sstp-api.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC200E2AB89FAB00CE1979 /* sstp-api.c */; };
 		7BFC20102AB89FAB00CE1979 /* sstp-api.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC200E2AB89FAB00CE1979 /* sstp-api.c */; };
 		7BFC20162AB89FD400CE1979 /* sstp-log.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC20122AB89FD300CE1979 /* sstp-log.c */; };
@@ -98,7 +110,7 @@
 		7B0C6F2B2AB759780039666C /* libevent_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_core.a; path = libevent/lib/libevent_core.a; sourceTree = "<group>"; };
 		7B0C6F2C2AB759780039666C /* libevent_extra.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_extra.a; path = libevent/lib/libevent_extra.a; sourceTree = "<group>"; };
 		7B0C6F2D2AB759780039666C /* libevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent.a; path = libevent/lib/libevent.a; sourceTree = "<group>"; };
-		7B84C0A92AA5853700E6B3DD /* com.vn.sstp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = com.vn.sstp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B84C0A92AA5853700E6B3DD /* sstp-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sstp-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B84C0AC2AA5853700E6B3DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7B84C0AD2AA5853700E6B3DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7B84C0AF2AA5853700E6B3DD /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
@@ -159,6 +171,20 @@
 		7B84C1262AA5871900E6B3DD /* sstp-common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-common.h"; sourceTree = "<group>"; };
 		7B84C1272AA77D6600E6B3DD /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = lib/libssl.a; sourceTree = "<group>"; };
 		7B84C1292AA77D7900E6B3DD /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = lib/libcrypto.a; sourceTree = "<group>"; };
+		7B9F18F82AB9FB0400A744E5 /* OpenPacket.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenPacket.mm; sourceTree = "<group>"; };
+		7B9F18F92AB9FB0400A744E5 /* OpenPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenPacket.h; sourceTree = "<group>"; };
+		7B9F18FC2AB9FB2900A744E5 /* OpenAdapterPacketFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenAdapterPacketFlow.h; sourceTree = "<group>"; };
+		7B9F18FD2AB9FB3A00A744E5 /* OpenNetworkSettingsBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenNetworkSettingsBuilder.h; sourceTree = "<group>"; };
+		7B9F18FE2AB9FB3A00A744E5 /* OpenNetworkSettingsBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenNetworkSettingsBuilder.m; sourceTree = "<group>"; };
+		7B9F19012AB9FB4C00A744E5 /* OpenPacketFlowBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenPacketFlowBridge.mm; sourceTree = "<group>"; };
+		7B9F19022AB9FB4C00A744E5 /* OpenPacketFlowBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenPacketFlowBridge.h; sourceTree = "<group>"; };
+		7B9F19052AB9FB6300A744E5 /* OpenAdapter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenAdapter.mm; sourceTree = "<group>"; };
+		7B9F19062AB9FB6300A744E5 /* OpenAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenAdapter.h; sourceTree = "<group>"; };
+		7B9F19092AB9FB7300A744E5 /* OpenClient.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenClient.mm; sourceTree = "<group>"; };
+		7B9F190A2AB9FB7300A744E5 /* OpenClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenClient.h; sourceTree = "<group>"; };
+		7B9F190D2AB9FBB000A744E5 /* OpenVPNError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenVPNError.h; sourceTree = "<group>"; };
+		7B9F190E2AB9FBB000A744E5 /* OpenVPNError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenVPNError.m; sourceTree = "<group>"; };
+		7B9F19112AB9FC8900A744E5 /* cplus_objectivec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cplus_objectivec.h; sourceTree = "<group>"; };
 		7BFC200E2AB89FAB00CE1979 /* sstp-api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-api.c"; sourceTree = "<group>"; };
 		7BFC20112AB89FD300CE1979 /* sstp-log-private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-log-private.h"; sourceTree = "<group>"; };
 		7BFC20122AB89FD300CE1979 /* sstp-log.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-log.c"; sourceTree = "<group>"; };
@@ -196,6 +222,7 @@
 		7B84C0A02AA5853700E6B3DD = {
 			isa = PBXGroup;
 			children = (
+				7B9F18F72AB9FAA500A744E5 /* wrapper */,
 				7B84C0DF2AA5861100E6B3DD /* sstp */,
 				7B84C0AB2AA5853700E6B3DD /* com.vn.sstp */,
 				7B84C0D22AA585A700E6B3DD /* tunnel */,
@@ -207,7 +234,7 @@
 		7B84C0AA2AA5853700E6B3DD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B84C0A92AA5853700E6B3DD /* com.vn.sstp.app */,
+				7B84C0A92AA5853700E6B3DD /* sstp-ios.app */,
 				7B84C0D02AA585A700E6B3DD /* tunnel.appex */,
 			);
 			name = Products;
@@ -310,12 +337,33 @@
 			path = sstp;
 			sourceTree = "<group>";
 		};
+		7B9F18F72AB9FAA500A744E5 /* wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				7B9F19112AB9FC8900A744E5 /* cplus_objectivec.h */,
+				7B9F18F92AB9FB0400A744E5 /* OpenPacket.h */,
+				7B9F18F82AB9FB0400A744E5 /* OpenPacket.mm */,
+				7B9F18FC2AB9FB2900A744E5 /* OpenAdapterPacketFlow.h */,
+				7B9F18FD2AB9FB3A00A744E5 /* OpenNetworkSettingsBuilder.h */,
+				7B9F18FE2AB9FB3A00A744E5 /* OpenNetworkSettingsBuilder.m */,
+				7B9F19022AB9FB4C00A744E5 /* OpenPacketFlowBridge.h */,
+				7B9F19012AB9FB4C00A744E5 /* OpenPacketFlowBridge.mm */,
+				7B9F19062AB9FB6300A744E5 /* OpenAdapter.h */,
+				7B9F19052AB9FB6300A744E5 /* OpenAdapter.mm */,
+				7B9F190A2AB9FB7300A744E5 /* OpenClient.h */,
+				7B9F19092AB9FB7300A744E5 /* OpenClient.mm */,
+				7B9F190D2AB9FBB000A744E5 /* OpenVPNError.h */,
+				7B9F190E2AB9FBB000A744E5 /* OpenVPNError.m */,
+			);
+			path = wrapper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B84C0A82AA5853700E6B3DD /* com.vn.sstp */ = {
+		7B84C0A82AA5853700E6B3DD /* sstp-ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B84C0C52AA5853A00E6B3DD /* Build configuration list for PBXNativeTarget "com.vn.sstp" */;
+			buildConfigurationList = 7B84C0C52AA5853A00E6B3DD /* Build configuration list for PBXNativeTarget "sstp-ios" */;
 			buildPhases = (
 				7B84C0A52AA5853700E6B3DD /* Sources */,
 				7B84C0A62AA5853700E6B3DD /* Frameworks */,
@@ -327,9 +375,9 @@
 			dependencies = (
 				7B84C0D92AA585A700E6B3DD /* PBXTargetDependency */,
 			);
-			name = com.vn.sstp;
+			name = "sstp-ios";
 			productName = com.vn.sstp;
-			productReference = 7B84C0A92AA5853700E6B3DD /* com.vn.sstp.app */;
+			productReference = 7B84C0A92AA5853700E6B3DD /* sstp-ios.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7B84C0CF2AA585A700E6B3DD /* tunnel */ = {
@@ -366,7 +414,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7B84C0A42AA5853700E6B3DD /* Build configuration list for PBXProject "com.vn.sstp" */;
+			buildConfigurationList = 7B84C0A42AA5853700E6B3DD /* Build configuration list for PBXProject "sstp-ios" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -379,7 +427,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B84C0A82AA5853700E6B3DD /* com.vn.sstp */,
+				7B84C0A82AA5853700E6B3DD /* sstp-ios */,
 				7B84C0CF2AA585A700E6B3DD /* tunnel */,
 			);
 		};
@@ -410,6 +458,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B9F18FA2AB9FB0400A744E5 /* OpenPacket.mm in Sources */,
+				7B9F19072AB9FB6300A744E5 /* OpenAdapter.mm in Sources */,
 				7B84C0C22AA5853A00E6B3DD /* main.m in Sources */,
 				7BFC20182AB89FD400CE1979 /* sstp-log-syslog.c in Sources */,
 				7B84C1062AA5862B00E6B3DD /* sstp-stream.c in Sources */,
@@ -424,12 +474,16 @@
 				7B84C1022AA5862B00E6B3DD /* sstp-fcs.c in Sources */,
 				7B84C11C2AA5862B00E6B3DD /* sstp-client.c in Sources */,
 				7B84C1182AA5862B00E6B3DD /* sstp-dump.c in Sources */,
+				7B9F18FF2AB9FB3B00A744E5 /* OpenNetworkSettingsBuilder.m in Sources */,
+				7B9F190B2AB9FB7300A744E5 /* OpenClient.mm in Sources */,
+				7B9F19032AB9FB4C00A744E5 /* OpenPacketFlowBridge.mm in Sources */,
 				7B84C0AE2AA5853700E6B3DD /* AppDelegate.m in Sources */,
 				7BFC20162AB89FD400CE1979 /* sstp-log.c in Sources */,
 				7B84C10E2AA5862B00E6B3DD /* sstp-http.c in Sources */,
 				7B84C1202AA5862B00E6B3DD /* sstp-state.c in Sources */,
 				7B84C11A2AA5862B00E6B3DD /* sstp-util.c in Sources */,
 				7BFC200F2AB89FAB00CE1979 /* sstp-api.c in Sources */,
+				7B9F190F2AB9FBB000A744E5 /* OpenVPNError.m in Sources */,
 				7B84C1042AA5862B00E6B3DD /* sstp-option.c in Sources */,
 				7B84C0B12AA5853700E6B3DD /* SceneDelegate.m in Sources */,
 				7B84C0BA2AA5853700E6B3DD /* com_vn_sstp.xcdatamodeld in Sources */,
@@ -444,14 +498,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B84C1032AA5862B00E6B3DD /* sstp-fcs.c in Sources */,
+				7B9F19102AB9FBB000A744E5 /* OpenVPNError.m in Sources */,
+				7B9F19042AB9FB4C00A744E5 /* OpenPacketFlowBridge.mm in Sources */,
 				7BFC20192AB89FD400CE1979 /* sstp-log-syslog.c in Sources */,
 				7B84C1192AA5862B00E6B3DD /* sstp-dump.c in Sources */,
+				7B9F19002AB9FB3B00A744E5 /* OpenNetworkSettingsBuilder.m in Sources */,
 				7B84C1072AA5862B00E6B3DD /* sstp-stream.c in Sources */,
 				7BFC20172AB89FD400CE1979 /* sstp-log.c in Sources */,
 				7B84C1112AA5862B00E6B3DD /* sstp-packet.c in Sources */,
 				7B84C1092AA5862B00E6B3DD /* sstp-event.c in Sources */,
+				7B9F19082AB9FB6300A744E5 /* OpenAdapter.mm in Sources */,
 				7B84C11D2AA5862B00E6B3DD /* sstp-client.c in Sources */,
 				7BFC201B2AB89FD400CE1979 /* sstp-log-std.c in Sources */,
+				7B9F190C2AB9FB7300A744E5 /* OpenClient.mm in Sources */,
 				7B84C10F2AA5862B00E6B3DD /* sstp-http.c in Sources */,
 				7B84C11F2AA5862B00E6B3DD /* sstp-pppd.c in Sources */,
 				7B84C1132AA5862B00E6B3DD /* sstp-chap.c in Sources */,
@@ -460,6 +519,7 @@
 				7B84C10B2AA5862B00E6B3DD /* sstp-buff.c in Sources */,
 				7B84C1212AA5862B00E6B3DD /* sstp-state.c in Sources */,
 				7BFC20102AB89FAB00CE1979 /* sstp-api.c in Sources */,
+				7B9F18FB2AB9FB0400A744E5 /* OpenPacket.mm in Sources */,
 				7B84C11B2AA5862B00E6B3DD /* sstp-util.c in Sources */,
 				7B84C10D2AA5862B00E6B3DD /* sstp-cmac.c in Sources */,
 				7B84C1152AA5862B00E6B3DD /* sstp-task.c in Sources */,
@@ -771,7 +831,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7B84C0A42AA5853700E6B3DD /* Build configuration list for PBXProject "com.vn.sstp" */ = {
+		7B84C0A42AA5853700E6B3DD /* Build configuration list for PBXProject "sstp-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B84C0C32AA5853A00E6B3DD /* Debug */,
@@ -780,7 +840,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B84C0C52AA5853A00E6B3DD /* Build configuration list for PBXNativeTarget "com.vn.sstp" */ = {
+		7B84C0C52AA5853A00E6B3DD /* Build configuration list for PBXNativeTarget "sstp-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B84C0C62AA5853A00E6B3DD /* Debug */,
