@@ -185,6 +185,7 @@
 		7B9F190D2AB9FBB000A744E5 /* OpenVPNError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenVPNError.h; sourceTree = "<group>"; };
 		7B9F190E2AB9FBB000A744E5 /* OpenVPNError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenVPNError.m; sourceTree = "<group>"; };
 		7B9F19112AB9FC8900A744E5 /* cplus_objectivec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cplus_objectivec.h; sourceTree = "<group>"; };
+		7B9F19122ABAAC4700A744E5 /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
 		7BFC200E2AB89FAB00CE1979 /* sstp-api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-api.c"; sourceTree = "<group>"; };
 		7BFC20112AB89FD300CE1979 /* sstp-log-private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-log-private.h"; sourceTree = "<group>"; };
 		7BFC20122AB89FD300CE1979 /* sstp-log.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-log.c"; sourceTree = "<group>"; };
@@ -340,6 +341,7 @@
 		7B9F18F72AB9FAA500A744E5 /* wrapper */ = {
 			isa = PBXGroup;
 			children = (
+				7B9F19122ABAAC4700A744E5 /* base.h */,
 				7B9F19112AB9FC8900A744E5 /* cplus_objectivec.h */,
 				7B9F18F92AB9FB0400A744E5 /* OpenPacket.h */,
 				7B9F18F82AB9FB0400A744E5 /* OpenPacket.mm */,
