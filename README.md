@@ -25,4 +25,6 @@ SSTP-Client features:
 - Xcode 9.0+
 
 ### Contact
-This is the incomplete version. If you are interested, contact me skype: tranvietanh.hust@gmail.com or email: tranvietanh.hust@gmail.com. I can help you with small fee.
+This is the incomplete version. 
+
+Go to get demo, connect me via  skype: tranvietanh.hust@gmail.com or email: tranvietanh.hust@gmail.com. I can help you with some fee.
