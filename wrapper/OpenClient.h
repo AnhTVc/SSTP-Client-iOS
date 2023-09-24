@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 //#import "../openconnect.h"
-//#import "open_connect.hpp"
+#import "WrapperSSTPClient.hpp"
+
 
 @class NEIPv4Route;
 @class NEIPv6Route;
@@ -53,7 +54,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)resetSettings;
 @end
 NS_ASSUME_NONNULL_END
-using namespace openconnect;
+using namespace SSTPClientNameSpace;
 class OpenClientA : public ClientAPI::OpenClient{
 public:
     OpenClientA(id<OpenClientDelegate> _Nonnull delegate);

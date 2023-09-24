@@ -13,7 +13,7 @@
 #ifndef _LIBCPP_STRING
 #include <string>
 
-namespace SSTPClient{
+namespace SSTPClientNameSpace{
     class TunBuilderBase
     {
     public:

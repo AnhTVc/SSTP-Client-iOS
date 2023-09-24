@@ -69,6 +69,10 @@
 		7B9F190C2AB9FB7300A744E5 /* OpenClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F19092AB9FB7300A744E5 /* OpenClient.mm */; };
 		7B9F190F2AB9FBB000A744E5 /* OpenVPNError.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F190E2AB9FBB000A744E5 /* OpenVPNError.m */; };
 		7B9F19102AB9FBB000A744E5 /* OpenVPNError.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F190E2AB9FBB000A744E5 /* OpenVPNError.m */; };
+		7B9F19192ABAFBEF00A744E5 /* WrapperSSTPClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F19172ABAFBEF00A744E5 /* WrapperSSTPClient.cpp */; };
+		7B9F191A2ABAFBEF00A744E5 /* WrapperSSTPClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F19172ABAFBEF00A744E5 /* WrapperSSTPClient.cpp */; };
+		7B9F191D2ABAFDBF00A744E5 /* externc.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F191B2ABAFDBF00A744E5 /* externc.mm */; };
+		7B9F191E2ABAFDBF00A744E5 /* externc.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F191B2ABAFDBF00A744E5 /* externc.mm */; };
 		7BFC200F2AB89FAB00CE1979 /* sstp-api.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC200E2AB89FAB00CE1979 /* sstp-api.c */; };
 		7BFC20102AB89FAB00CE1979 /* sstp-api.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC200E2AB89FAB00CE1979 /* sstp-api.c */; };
 		7BFC20162AB89FD400CE1979 /* sstp-log.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC20122AB89FD300CE1979 /* sstp-log.c */; };
@@ -186,6 +190,10 @@
 		7B9F190E2AB9FBB000A744E5 /* OpenVPNError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenVPNError.m; sourceTree = "<group>"; };
 		7B9F19112AB9FC8900A744E5 /* cplus_objectivec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cplus_objectivec.h; sourceTree = "<group>"; };
 		7B9F19122ABAAC4700A744E5 /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
+		7B9F19172ABAFBEF00A744E5 /* WrapperSSTPClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WrapperSSTPClient.cpp; sourceTree = "<group>"; };
+		7B9F19182ABAFBEF00A744E5 /* WrapperSSTPClient.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WrapperSSTPClient.hpp; sourceTree = "<group>"; };
+		7B9F191B2ABAFDBF00A744E5 /* externc.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = externc.mm; sourceTree = "<group>"; };
+		7B9F191C2ABAFDBF00A744E5 /* externc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = externc.hpp; sourceTree = "<group>"; };
 		7BFC200E2AB89FAB00CE1979 /* sstp-api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-api.c"; sourceTree = "<group>"; };
 		7BFC20112AB89FD300CE1979 /* sstp-log-private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sstp-log-private.h"; sourceTree = "<group>"; };
 		7BFC20122AB89FD300CE1979 /* sstp-log.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sstp-log.c"; sourceTree = "<group>"; };
@@ -341,6 +349,8 @@
 		7B9F18F72AB9FAA500A744E5 /* wrapper */ = {
 			isa = PBXGroup;
 			children = (
+				7B9F191C2ABAFDBF00A744E5 /* externc.hpp */,
+				7B9F191B2ABAFDBF00A744E5 /* externc.mm */,
 				7B9F19122ABAAC4700A744E5 /* base.h */,
 				7B9F19112AB9FC8900A744E5 /* cplus_objectivec.h */,
 				7B9F18F92AB9FB0400A744E5 /* OpenPacket.h */,
@@ -356,6 +366,8 @@
 				7B9F19092AB9FB7300A744E5 /* OpenClient.mm */,
 				7B9F190D2AB9FBB000A744E5 /* OpenVPNError.h */,
 				7B9F190E2AB9FBB000A744E5 /* OpenVPNError.m */,
+				7B9F19172ABAFBEF00A744E5 /* WrapperSSTPClient.cpp */,
+				7B9F19182ABAFBEF00A744E5 /* WrapperSSTPClient.hpp */,
 			);
 			path = wrapper;
 			sourceTree = "<group>";
@@ -485,9 +497,11 @@
 				7B84C1202AA5862B00E6B3DD /* sstp-state.c in Sources */,
 				7B84C11A2AA5862B00E6B3DD /* sstp-util.c in Sources */,
 				7BFC200F2AB89FAB00CE1979 /* sstp-api.c in Sources */,
+				7B9F191D2ABAFDBF00A744E5 /* externc.mm in Sources */,
 				7B9F190F2AB9FBB000A744E5 /* OpenVPNError.m in Sources */,
 				7B84C1042AA5862B00E6B3DD /* sstp-option.c in Sources */,
 				7B84C0B12AA5853700E6B3DD /* SceneDelegate.m in Sources */,
+				7B9F19192ABAFBEF00A744E5 /* WrapperSSTPClient.cpp in Sources */,
 				7B84C0BA2AA5853700E6B3DD /* com_vn_sstp.xcdatamodeld in Sources */,
 				7B84C10C2AA5862B00E6B3DD /* sstp-cmac.c in Sources */,
 				7BFC201A2AB89FD400CE1979 /* sstp-log-std.c in Sources */,
@@ -507,6 +521,7 @@
 				7B9F19002AB9FB3B00A744E5 /* OpenNetworkSettingsBuilder.m in Sources */,
 				7B84C1072AA5862B00E6B3DD /* sstp-stream.c in Sources */,
 				7BFC20172AB89FD400CE1979 /* sstp-log.c in Sources */,
+				7B9F191A2ABAFBEF00A744E5 /* WrapperSSTPClient.cpp in Sources */,
 				7B84C1112AA5862B00E6B3DD /* sstp-packet.c in Sources */,
 				7B84C1092AA5862B00E6B3DD /* sstp-event.c in Sources */,
 				7B9F19082AB9FB6300A744E5 /* OpenAdapter.mm in Sources */,
@@ -519,6 +534,7 @@
 				7BFC201D2AB89FD400CE1979 /* sstp-log-file.c in Sources */,
 				7B84C0D52AA585A700E6B3DD /* PacketTunnelProvider.m in Sources */,
 				7B84C10B2AA5862B00E6B3DD /* sstp-buff.c in Sources */,
+				7B9F191E2ABAFDBF00A744E5 /* externc.mm in Sources */,
 				7B84C1212AA5862B00E6B3DD /* sstp-state.c in Sources */,
 				7BFC20102AB89FAB00CE1979 /* sstp-api.c in Sources */,
 				7B9F18FB2AB9FB0400A744E5 /* OpenPacket.mm in Sources */,

@@ -10,7 +10,7 @@
 #import <NetworkExtension/NetworkExtension.h>
 #import "OpenClient.h"
 #import "OpenPacketFlowBridge.h"
-#import "open_connect.hpp"
+//#import "open_connect.hpp"
 #import "OpenNetworkSettingsBuilder.h"
 @interface OpenAdapter () <OpenClientDelegate>
 @property (nonatomic) OpenClientA *vpnClient;
@@ -170,7 +170,8 @@
         }];
         argv[argc] = NULL;
         const char *cfPass=[password UTF8String];
-        int result = self.vpnClient->connect(argc, argv, cfPass);
+        // TODO
+        int result = self.vpnClient->connect();
     });
 }
 
